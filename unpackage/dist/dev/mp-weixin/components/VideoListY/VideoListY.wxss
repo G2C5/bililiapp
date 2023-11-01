@@ -1,0 +1,135 @@
+
+.video-content.data-v-030547c4 {
+	background-color: #efefef;
+	display: flex;
+	flex-wrap: wrap;
+}
+.video-item.data-v-030547c4 {
+	width: 360rpx;
+	height: 500rpx;
+	margin-left: 10rpx;
+	margin-bottom: 10rpx;
+	box-sizing: border-box;
+	background-color: #fff;
+	border-radius: 20rpx;
+	overflow: hidden;
+}
+.vedio-cover.data-v-030547c4 {
+	width: 100%;
+	height: 300rpx;
+}
+.vedio-title.data-v-030547c4 {
+
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+}
+.vedio-info.data-v-030547c4 {
+	width: 100%;
+	height: 200rpx;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 0 10rpx 30rpx;
+	box-sizing: border-box;
+}
+.live-info.data-v-030547c4 {
+	display: flex;
+	height: 100%;
+	width: 100%;
+	align-items: flex-end;
+	justify-content: space-between;
+	font-size: 24rpx;
+}
+.live-footer-left.data-v-030547c4 {
+	width: 200rpx;
+	height: 90rpx;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	padding-left: 10rpx;
+}
+.live-state.data-v-030547c4{
+	display: inline-block;
+	display: flex;
+	align-items: center;
+}
+.livegif.data-v-030547c4{
+	height: 18px;
+	width: 100rpx;
+	border: 2rpx solid #ff0044;
+	border-radius: 10rpx;
+}
+.vedio-game.data-v-030547c4 {
+	display: flex;
+	width: 100%;
+	height: 100rpx;
+}
+.game-img.data-v-030547c4 {
+	width: 90rpx;
+	height: 90rpx;
+	border-radius: 20%;
+}
+.game-info.data-v-030547c4 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-size: 24rpx;
+	padding-left: 10rpx;
+	color: #868686;
+}
+.game-title.data-v-030547c4 {}
+.game-flag.data-v-030547c4 {}
+.vedio-footer.data-v-030547c4 {
+	width: 100%;
+	font-size: 24rpx;
+	color: #868686;
+	display: flex;
+	justify-content: space-between;
+}
+.vedio-footer-left.data-v-030547c4 {
+	width: 90%;
+	display: flex;
+}
+.vedio-author.data-v-030547c4 {
+	white-space: nowrap;
+	/* 禁止文本换行 */
+	overflow: hidden;
+	/* 隐藏溢出的部分 */
+	text-overflow: ellipsis;
+	/* 在溢出时显示省略号 (...) */
+}
+.vedio-type1.data-v-030547c4 {
+	width: 48rpx;
+	text-align: center;
+	white-space: nowrap;
+	padding: 0 4rpx;
+	border: 2rpx solid #868686;
+	border-radius: 30%;
+	overflow: hidden;
+	margin: 6rpx 0;
+	margin-right: 10rpx;
+}
+.vedio-type2.data-v-030547c4 {
+	white-space: nowrap;
+	padding: 2rpx 6rpx;
+	color: #ff3e04;
+	border: 2rpx solid #ffefe2;
+	background-color: #ffefe2;
+	border-radius: 10%;
+	margin-right: 10rpx;
+}
+.vedio-type3.data-v-030547c4 {
+	white-space: nowrap;
+	padding: 2rpx 6rpx;
+	color: #ff0044;
+	border: 2rpx solid #ff0044;
+	border-radius: 10%;
+	margin-right: 10rpx;
+}
+.hh.data-v-030547c4 {
+	width: 30rpx;
+	height: 30rpx;
+}
+

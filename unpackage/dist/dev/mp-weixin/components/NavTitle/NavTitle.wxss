@@ -1,0 +1,9 @@
+
+.now.data-v-24eebcb8{
+	display: flex;
+	justify-content: space-between;
+	padding: 20rpx 10rpx;
+	font-size: 28rpx;
+	font-weight: 700;
+}
+

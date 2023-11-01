@@ -1,0 +1,98 @@
+
+.video-content.data-v-b280f338 {
+	background-color: #efefef;
+	display: flex;
+	flex-wrap: wrap;
+}
+.video-item.data-v-b280f338 {
+	display: flex;
+	width: 750rpx;
+	height: 230rpx;
+	padding: 0 10rpx;
+	margin-bottom: 10rpx;
+	box-sizing: border-box;
+	background-color: #fff;
+}
+.vedio-cover.data-v-b280f338 {
+	width: 340rpx;
+	height: 100%;
+	padding: 10rpx 0;
+	box-sizing: border-box;
+	border-radius: 20rpx;
+	overflow: hidden;
+}
+.vedio-info.data-v-b280f338 {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 50%;
+	margin-left: 10rpx;
+	padding: 10rpx 0;
+}
+.vedio-title.data-v-b280f338 {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+}
+.vedio-message.data-v-b280f338 {
+	font-size: 24rpx;
+	color: #868686;
+}
+.vedio-header.data-v-b280f338 {
+	display: flex;
+	align-items: center;
+}
+.vedio-footer.data-v-b280f338 {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.box.data-v-b280f338 {
+	width: 100%;
+	font-size: 24rpx;
+	color: #868686
+}
+.vedio-author.data-v-b280f338 {
+	width: 90%;
+	white-space: nowrap;
+	/* 禁止文本换行 */
+	overflow: hidden;
+	/* 隐藏溢出的部分 */
+	text-overflow: ellipsis;
+	/* 在溢出时显示省略号 (...) */
+}
+.vedio-type1.data-v-b280f338 {
+	width: 36rpx;
+	text-align: center;
+	white-space: nowrap;
+	border: 2rpx solid #868686;
+	border-radius: 30%;
+	margin: 6rpx 0;
+	margin-right: 10rpx;
+}
+.vedio-type2.data-v-b280f338 {
+	display: inline-block;
+	padding: 0 6rpx;
+	color: #ff3e04;
+	border: 2rpx solid #ffefe2;
+	background-color: #ffefe2;
+	border-radius: 10%;
+
+	margin-right: 10rpx;
+}
+.vedio-type3.data-v-b280f338 {
+	display: inline-block;
+	padding: 2rpx 6rpx;
+	color: #ff3e04;
+	border: 2rpx solid #ff3e04;
+	background-color: #ffefef;
+	border-radius: 10%;
+	margin-right: 10rpx;
+}
+.hh.data-v-b280f338 {
+	width: 35rpx;
+	height: 30rpx;
+}
+

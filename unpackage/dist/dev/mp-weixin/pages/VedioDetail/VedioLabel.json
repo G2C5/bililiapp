@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "iconfont-view": "/components/IconfontView/IconfontView"
+  },
+  "component": true
+}

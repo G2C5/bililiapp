@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "vedio-list-x": "/components/vedioListX/vedioListX",
+    "video-introduction": "/pages/VedioDetail/VideoIntroduction"
+  }
+}

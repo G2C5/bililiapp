@@ -1,0 +1,15 @@
+
+.join-vip.data-v-7141ad64 {
+	display: block;
+	width: 180rpx;
+	height: 50rpx;
+	line-height: 50rpx;
+	text-align: center;
+	font-size: 32rpx;
+	border-radius: 32rpx;
+	background-color: #f43b8b;
+	color: #ffffff;
+	margin: 0;
+	padding: 0;
+}
+

@@ -1,0 +1,57 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 视频-标签 */
+.vedio-label.data-v-320f2f16 {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.vedio-label-item.data-v-320f2f16 {
+	display: flex;
+	align-items: center;
+	justify-content: center; 
+	margin-right: 20rpx;
+	margin-top: 20rpx;
+	padding: 0 20rpx;
+	background-color: #dedede;
+	border-radius: 50rpx;
+}
+.vedio-label-title.data-v-320f2f16 {
+	color: #707070;
+	font-size: 24rpx;
+	padding: 10rpx 6rpx;
+}
+

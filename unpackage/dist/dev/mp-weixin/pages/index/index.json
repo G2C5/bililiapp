@@ -1,0 +1,14 @@
+{
+  "navigationBarTitleText": "uni-app",
+  "usingComponents": {
+    "swiper-page": "/components/SwiperPage/SwiperPage",
+    "video-list-y": "/components/VideoListY/VideoListY",
+    "image-nav": "/components/ImageNav/ImageNav",
+    "vedio-list-x": "/components/vedioListX/vedioListX",
+    "vip-join": "/components/VipJoin/VipJoin",
+    "chasing-fan": "/components/ChasingFan/ChasingFan",
+    "nav-title": "/components/NavTitle/NavTitle",
+    "big-image-card": "/components/BigImageCard/BigImageCard",
+    "index-nav": "/pages/index/indexItem/IndexNav"
+  }
+}

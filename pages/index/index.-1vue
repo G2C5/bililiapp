@@ -1,0 +1,192 @@
+<template>
+	<view class="content">
+		<!-- 头部 -->
+		<!-- 预留状态栏位置 -->
+		<view class="sticky-nav" :style="{paddingTop:navData.statusBarHeight+'px'}">
+			<NavigationBar v-show="!showTopNav.isHeaderHidden" :isHeaderHidden="showTopNav.isHeaderHidden"></NavigationBar>
+			<IndexNav :navData='navList.nav' :getIndex="getIndex" :swiperIndex="swiperIndex"></IndexNav>
+		</view>
+		<!-- </view> -->
+		<view class="swiper-container">
+			<swiper @change="onChangeTap" :current="swiperIndex" :style="{height:showTopNav.scrollViewHeight+ 'px'}">
+				<swiper-item class="swiper-item" v-for="(item,index) in navList.data" :id="index">
+					<scroll-view @scroll="onScrollViewScroll" scroll-y="true"
+						:style="{height:showTopNav.scrollViewHeight+ 'px'}">
+						<view class="text">{{showTopNav.scrollViewHeight}}</view>
+						<!-- 推荐 -->
+					<!-- 	<text>{{navHeight}}</text>
+						<template v-if="item.type == 'recommend'">
+							<SwiperPage></SwiperPage>
+							<VideoListY></VideoListY>
+						</template> -->
+						<!-- 热门 -->
+				<!-- 		<template v-if="item.type == 'hot'">
+							<ImageNav></ImageNav>
+							<vedioListX></vedioListX>
+						</template> -->
+						<!-- 动画 -->
+			<!-- 			<template v-if="item.type == 'animation'">
+							<SwiperPage></SwiperPage>
+							<ImageNav></ImageNav>
+							<VipJoin></VipJoin>
+							<ChasingFan></ChasingFan>
+							<NavTitle></NavTitle>
+							<VideoListY></VideoListY>
+							<BigImageCard></BigImageCard>
+						</template> -->
+					</scroll-view>
+				</swiper-item>
+			</swiper>
+		</view>
+		<!-- 
+		<SwiperPage></SwiperPage>
+		<VideoList></VideoList> -->
+	</view>
+</template>
+
+<script>
+	import {
+		navList
+	} from '../../utils/homedata.js'
+	import IndexNav from './indexItem/IndexNav.vue'
+	export default {
+		data() {
+			return {
+				// 导航的top值
+				showTopNav: {
+					// 是否隐藏顶部
+					isHeaderHidden: false,
+					// 是否固定滑动导航
+					isNavFixed: false,
+					// 可视区高度
+					scrollViewHeight: 0,
+					// 上或下滑动判断
+					lastScrollTop: 0,
+					isScrollingUp: false,
+					isScrollingDown: false,
+				},
+				// 控制顶部搜索栏显示隐藏
+				topNav: true,
+				test: 0,
+				// 当前导航index
+				swiperIndex: 1,
+				// 模拟数据
+				navList: navList,
+				// 系统信息
+				navData: {
+					// 可使用窗口高度
+					windowHeight: uni.getStorageSync('menuInfo').windowHeight,
+					// 屏幕高度
+					screenHeight: uni.getStorageSync('menuInfo').screenHeight,
+					// 设备系统
+					platform: uni.getStorageSync('menuInfo').platform,
+					// 安全区底部坐标
+					safeAreaBottom: uni.getStorageSync('menuInfo').safeAreaBottom,
+					// 状态栏高度
+					statusBarHeight: uni.getStorageSync('menuInfo').statusBarHeight
+				},
+			}
+		},
+		components: {
+			IndexNav,
+		},
+		onLoad() {
+
+		},
+		onReady() {
+			// 获取home页面节点信息的高度来修改swiper高度
+			// 手动计算
+			//platform:              设备系统
+			//safeAreaBottom:        安全区底部坐标
+			//windowHeight：         可使用窗口高度（ios系统默认不算底部导航，安卓算）
+			//screenHeight：         屏幕高度
+			//navHeight:             顶部自定义导航区高度
+			//topNav:                顶部滑动导航栏高度（和自定义样式保持一致）
+			//bottomNavHeight:       底部导航区高度（安全区底部坐标-可视区）
+			//contentArea:           内容展示区 = 安全区底部坐标 - 顶部自定义导航区高度 - 顶部滑动导航栏高度 - 底部导航区高度 
+			const platform = this.navData.platform
+			const safeAreaBottom = this.navData.safeAreaBottom
+			const navHeight = this.navHeight
+			const windowHeight = this.navData.windowHeight
+			const bottomNavHeight = safeAreaBottom - windowHeight
+			const topNav = 40
+			let contentArea = safeAreaBottom - navHeight - topNav - bottomNavHeight
+			this.showTopNav.scrollViewHeight = contentArea
+			this.test = this.navData.statusBarHeight
+		},
+		computed: {
+			// 顶部自定义导航占位高度：避免遮挡、此高度（+44）需要同.navlist样式一致
+			navHeight() {
+				return this.navData.statusBarHeight + 44
+			},
+
+		},
+		methods: {
+			// 点击导航跳转
+			getIndex(value, navLength) {
+				this.swiperIndex = value
+			},
+			// 滑动跳转
+			onChangeTap(e) {
+				this.getIndex(e.detail.current)
+			},
+			// scroll-view上下滑动事件
+			onScrollViewScroll(event) {
+				const currentScrollTop = event.detail.scrollTop;
+				if (currentScrollTop > this.showTopNav.lastScrollTop) {
+					// 向下滑动
+					this.showTopNav.isScrollingUp = false
+					this.showTopNav.isScrollingDown = true
+
+					if (this.showTopNav.isHeaderHidden !== true) {
+						this.showTopNav.isHeaderHidden = true
+						console.log('向上滑动', this.showTopNav.isHeaderHidden)
+					}
+
+				} else if (currentScrollTop < this.showTopNav.lastScrollTop) {
+					// 向上滑动
+					this.showTopNav.isScrollingUp = true
+					this.showTopNav.isScrollingDown = false
+
+					if (this.showTopNav.isHeaderHidden !== false) {
+						this.showTopNav.isHeaderHidden = false
+						console.log('向下滑动', this.showTopNav.isHeaderHidden)
+					}
+				}
+				// 更新上次滚动位置
+				this.showTopNav.lastScrollTop = currentScrollTop;
+			},
+		},
+		watch: {
+
+		}
+	}
+</script>
+
+<style scoped>
+	.icon {
+		width: 2em;
+		height: 2em;
+		vertical-align: -0.15em;
+		fill: currentColor;
+		overflow: hidden;
+	}
+
+	.swiper-item {
+		/* background-color: #0ee; */
+	}
+
+	.sticky-nav {
+		position: sticky;
+		top: 0;
+		background-color: #fff;
+		/* 根据你的需求设置背景色 */
+		z-index: 1;
+		/* 确保导航栏在页面上方显示 */
+	}
+	.text{
+		width: 100%;
+		height: 100%;
+		background-color:#0ee;
+	}
+</style>

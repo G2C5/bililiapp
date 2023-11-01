@@ -1,0 +1,1 @@
+<view class="{{['icon',icon]}}" style="{{'width:'+(iconwidth)+';'+('height:'+(iconheight)+';')}}"></view>

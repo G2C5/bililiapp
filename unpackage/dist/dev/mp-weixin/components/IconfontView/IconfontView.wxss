@@ -1,0 +1,11 @@
+
+.icon {
+	display: inline-block;
+	fill: currentColor;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+

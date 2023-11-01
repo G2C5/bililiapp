@@ -1,0 +1,87 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "uni-app",
+				"app-plus": {
+					"scrollIndicator": "none",
+					"bounce": "none"
+				}
+			}
+		}, {
+			"path": "pages/my/my",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"scrollIndicator": "none",
+					"bounce": "none"
+				}
+			}
+
+		}, {
+			"path": "pages/space/space",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"scrollIndicator": "none",
+					"bounce": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/VedioDetail/VedioDetail",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"scrollIndicator": "none",
+					"bounce": "none"
+				}
+			}
+		}
+    ],
+	"usingComponents": {
+	  "uniRecycleView": "@dcloudio/uni-recycle-view"
+	},
+	"tabBar": {
+		"backgroundColor": "#FA7298",
+		"color": "#707070",
+		"selectedColor": "#e6e6e6",
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/navIcon/homeSelected.png",
+				"selectedIconPath": "static/navIcon/home.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/space/space",
+				"iconPath": "static/navIcon/space.png",
+				"selectedIconPath": "static/navIcon/spaceSelected.png",
+				"text": "动态"
+			},
+			{
+				"pagePath": "pages/my/my",
+				"iconPath": "static/navIcon/my.png",
+				"selectedIconPath": "static/navIcon/mySelected.png",
+				"text": "我的"
+			}
+		]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8",
+		"navigationStyle": "custom",
+		"app-plus": {
+			"scrollIndicator": "none",
+			"bounce": "none"
+		}
+	},
+	"uniIdRouter": {},
+	"easycom": { "^u-(.*)": "uview-ui/components/u-$1/u-$1.vue" }
+}

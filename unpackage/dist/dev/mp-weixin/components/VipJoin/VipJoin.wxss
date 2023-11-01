@@ -1,0 +1,34 @@
+
+.vip-card.data-v-21154794{
+	height: 100rpx;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20rpx 40rpx;
+	margin: 0 10rpx;
+	background-color: #fa9db9;
+	border-radius: 20rpx;
+}
+.vip-left.data-v-21154794{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	color: #e71b5c;
+}
+.vip-header.data-v-21154794{
+	font-size: 36rpx;
+}
+.vip-footer.data-v-21154794{
+	font-size: 26rpx;
+}
+.vip-right.data-v-21154794{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.close-vip.data-v-21154794{
+	font-size: 48rpx;
+	color: #fa4063;
+	padding-left: 30rpx;
+}
+

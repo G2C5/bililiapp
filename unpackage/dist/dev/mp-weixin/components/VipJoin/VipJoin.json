@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "pink-buttom": "/components/PinkButtom/PinkButtom"
+  },
+  "component": true
+}

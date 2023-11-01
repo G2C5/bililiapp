@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "pink-buttom": "/components/PinkButtom/PinkButtom",
+    "iconfont-view": "/components/IconfontView/IconfontView",
+    "vedio-lable": "/pages/VedioDetail/VedioLabel"
+  }
+}

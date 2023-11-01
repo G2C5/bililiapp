@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/my/my",
+    "pages/space/space",
+    "pages/VedioDetail/VedioDetail"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8",
+    "navigationStyle": "custom"
+  },
+  "tabBar": {
+    "backgroundColor": "#FA7298",
+    "color": "#707070",
+    "selectedColor": "#e6e6e6",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/navIcon/homeSelected.png",
+        "selectedIconPath": "static/navIcon/home.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/space/space",
+        "iconPath": "static/navIcon/space.png",
+        "selectedIconPath": "static/navIcon/spaceSelected.png",
+        "text": "动态"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "iconPath": "static/navIcon/my.png",
+        "selectedIconPath": "static/navIcon/mySelected.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

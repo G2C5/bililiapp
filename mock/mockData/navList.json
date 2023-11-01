@@ -1,0 +1,37 @@
+{
+	"nav": ["直播", "推荐", "热门", "动画", "影视", "新征程", "追番（港澳台）", "戏剧（港澳台）"],
+	"data": [{
+			"type": "live",
+			"data": []
+		},
+		{
+			"type": "recommend",
+			"data": []
+		},
+		{
+			"type": "hot",
+			"data": []
+		},
+		{
+			"type": "animation",
+			"data": []
+		},
+		{
+			"type": "vedio",
+			"data": []
+		},
+		{
+			"type": "newJourney",
+			"data": []
+		},
+
+		{
+			"type": "Fan",
+			"data": []
+		},
+		{
+			"type": "drama",
+			"data": []
+		}
+	]
+}

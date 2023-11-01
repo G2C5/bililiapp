@@ -1,0 +1,79 @@
+[
+	{
+		"id":"1",
+		"type":"vedio",
+		"cover": "../../static/logo.png",
+		"vedio": {
+			"title": "标题是什么啊？的rfhai付好款放大发疯阿德法案发达罚啊打发das",
+			"autor": "一只番薯ddddddddddddddddddddddd",
+			"titlrType": "UP",
+			"classType": 1
+		},
+		"game": {},
+		"live": {}
+	},
+	{
+		"id":"2",
+		"cover": "../../static/logo.png",
+		"type":"live",
+		"vedio": {},
+		"game": {},
+		"live": {
+			"autor": "一只番薯ddddddddddddddddddddddd",
+			"autorImg":"../../static/logo.png"
+		}
+	},
+	{
+		"id":"3",
+		"cover": "../../static/logo.png",
+		"type":"game",
+		"vedio": {},
+		"game": {
+			"gameImg":"../../static/logo.png",
+			"gameName":"原神",
+			"gameLabel":"动作/冒险",
+			"titlrType": "游戏",
+			"classType": 2
+		},
+		"live": {}
+	},
+	{
+		"id":"4",
+		"type":"vedio",
+		"cover": "../../static/logo.png",
+		"vedio": {
+			"title": "标题是什么啊？的rfhai付好款放大发疯阿德法案发达罚啊打发das",
+			"autor": "一只番薯ddddddddddddddddddddddd",
+			"titlrType": "竖屏",
+			"classType": 2
+		},
+		"game": {},
+		"live": {}
+	},
+	{
+		"id":"5",
+		"type":"vedio",
+		"cover": "../../static/logo.png",
+		"vedio": {
+			"title": "标题是什么啊？的rfhai付好款放大发疯阿德法案发达罚啊打发das",
+			"autor": "一只番薯ddddddddddddddddddddddd",
+			"titlrType": "已关注",
+			"classType": 2
+		},
+		"game": {},
+		"live": {}
+	},
+	{
+		"id":"6",
+		"type":"vedio",
+		"cover": "../../static/logo.png",
+		"vedio": {
+			"title": "标题是什么啊？的rfhai付好款放大发疯阿德法案发达罚啊打发das",
+			"autor": "一只番薯ddddddddddddddddddddddd",
+			"titlrType": "9千点赞",
+			"classType": 2
+		},
+		"game": {},
+		"live": {}
+	}
+]

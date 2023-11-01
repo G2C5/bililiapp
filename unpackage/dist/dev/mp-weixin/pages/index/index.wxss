@@ -1,0 +1,370 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 导航区 */
+.nav.data-v-57280228 {
+	width: 750rpx;
+	z-index: 999;
+	height: 88rpx;
+	background-color: #FA7298;
+}
+.navlist.data-v-57280228 {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	height: 88rpx;
+}
+.user-img.data-v-57280228 {
+	display: inline-block;
+	height: 80rpx;
+	width: 80rpx;
+	border-radius: 50%;
+}
+.user-input.data-v-57280228 {
+	display: flex;
+	justify-content: space-between;
+	/* 侧轴的中间对齐 */
+	align-items: center;
+	font-size: 0;
+	background-color: #fff;
+	border-radius: 32rpx;
+	padding-left: 10rpx;
+}
+.nav .navlist .user-input input.data-v-57280228 {
+	width: 80%;
+	padding: 10rpx;
+	background-color: #fff;
+	border-radius: 32rpx;
+	font-size: 24rpx;
+}
+.nav .navlist .hot-img.data-v-57280228 {
+	width: 60rpx;
+	height: 60rpx;
+	border-radius: 50rpx;
+}
+.icon-input.data-v-57280228 {
+	padding-left: 20rpx;
+	width: 32rpx;
+	height: 32rpx;
+	fill: currentColor;
+	overflow: hidden;
+}
+.hh.data-v-57280228 {
+	width: 32rpx;
+	height: 32rpx;
+}
+/* 滑动导航区 */
+.bar.data-v-57280228 {
+	z-index: 9999;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 750rpx;
+	height: 80rpx;
+	background-color: #FA7298;
+}
+.bar-content.data-v-57280228 {
+	padding-left: 50rpx;
+	overflow: hidden;
+}
+.scroll-content.data-v-57280228 {
+	white-space: nowrap;
+	height: 80rpx;
+	line-height: 80rpx;
+}
+.bar-item.data-v-57280228 {
+	display: inline-block;
+	height: 80rpx;
+	margin-right: 40rpx;
+	color: #efefef;
+}
+.bar-icon.data-v-57280228 {
+	z-index: 999;
+	padding-right: 40rpx;
+	padding-left: 10rpx;
+	background-repeat: no-repeat;
+	/* 水平居中对齐子元素 */
+	box-shadow: -20rpx 0 10rpx rgba(250, 114, 152, 0.6);
+	/* 在左侧添加阴影 */
+}
+.bar-item-title.data-v-57280228 {
+	display: inline-block;
+}
+.bar-item-active.data-v-57280228 {
+	font-size: 36rpx;
+	font-weight: bold;
+	box-sizing: border-box;
+	border-bottom: 4px solid #fff;
+}
+/* 导航栏动画 */
+.top.data-v-57280228 {
+	-webkit-transform: translateY(-88rpx);
+	        transform: translateY(-88rpx);
+}
+.topOpacity.data-v-57280228 {
+	opacity: 0;
+}
+.hearder.data-v-57280228 {
+	transition: all 0.5s;
+}
+.swiper-item.data-v-57280228 {
+	/* background-color: #0ee; */
+}
+.sticky-nav.data-v-57280228 {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	/* 根据你的需求设置背景色 */
+	z-index: 1;
+	/* 确保导航栏在页面上方显示 */
+}
+

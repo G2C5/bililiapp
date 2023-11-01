@@ -1,0 +1,72 @@
+
+.fan-box.data-v-c2714278 {
+	width: 750rpx;
+	height: 350rpx;
+	display: flex;
+	flex-direction: column;
+	background-color: #fff;
+}
+.fan-header.data-v-c2714278 {
+	display: flex;
+	justify-content: space-between;
+	padding: 10rpx;
+	background-color: #fff;
+}
+.fan-header-left.data-v-c2714278,
+.fan-header-right.data-v-c2714278{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.fan-header-left.data-v-c2714278{
+	font-size: 28rpx;
+	font-weight: 700;
+}
+.fan-header-right.data-v-c2714278{
+	font-size: 24rpx;
+	color: #9f9f9f;
+}
+.fan-left-word.data-v-c2714278,
+.fan-right-word.data-v-c2714278{
+	padding: 0 10rpx;
+}
+
+/*图片 */
+.fan-content.data-v-c2714278{
+	height:100rpx;
+}
+.fan-scroll.data-v-c2714278{
+	padding-right: 10rpx;
+	box-sizing: border-box;
+	white-space: nowrap;
+}
+.fan-item.data-v-c2714278{
+	display: inline-block;
+	width: 280rpx;
+	padding: 10rpx;
+}
+.fan-item-img.data-v-c2714278{
+	width: 280rpx;
+	height: 160rpx;
+}
+.fan-item-info.data-v-c2714278{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.fan-title.data-v-c2714278,
+.fan-progress.data-v-c2714278{
+	width: 100%;
+	padding-top: 8rpx;
+	font-size: 28rpx;
+	box-sizing: border-box;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.fan-progress.data-v-c2714278{
+	font-size: 24rpx;
+	color: #FA7298;
+}
+
